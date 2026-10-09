@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinkit Sales & Delivery Dashboard | Pritish Kumar Patra</title>
+  <meta name="description" content="Data Analytics Case Study: Consolidated view of quick commerce order volumes, revenue, and delivery performance across regions and categories using SQL and Power BI.">
+  <meta name="author" content="Pritish Kumar Patra">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blinkit Sales & Delivery Dashboard | Case Study">
+  <meta property="og:description" content="End-to-end Power BI & SQL Quick Commerce performance dashboard by Pritish Kumar Patra.">
+  <meta property="og:image" content="../../assets/images/blinkit_dashboard.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/case-study.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-case-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="../../index.html" class="logo-badge" aria-label="Return to homepage">
+        <div class="logo-symbol">P</div>
+        <div class="logo-text">
+          <span class="logo-name">Pritish Patra</span>
+          <span class="logo-role">Data Analyst</span>
+        </div>
+      </a>
+
+      <nav aria-label="Case Study Navigation">
+        <ul class="nav-menu">
+          <li><a href="../../index.html#projects" class="nav-link">← Back to Projects</a></li>
+          <li><a href="../../index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="../../index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="../../Pritish_Kumar_Patra_Resume.pdf" download="Pritish_Kumar_Patra_Resume.pdf" class="nav-cta-btn">
+              Resume ↓
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-case-content">
+    
+    <!-- Hero / Title Band -->
+    <section class="case-study-hero" aria-label="Case Study Overview">
+      <div class="container">
+        <a href="../../index.html#projects" class="case-breadcrumb" id="back-to-projects-link">
+          ← Back to All Projects
+        </a>
+        <span class="section-label">Quick Commerce Operations Analytics</span>
+        <h1 class="case-title">Blinkit Sales and Delivery Dashboard</h1>
+        <p style="color:var(--color-text-muted); font-size: 1.15rem; max-width: 760px; line-height: 1.6;">
+          A consolidated view of order volumes, revenue, and delivery performance across regions and product categories to empower operational teams with rapid decision-making.
+        </p>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Project Type</span>
+            <span class="case-meta-val">Portfolio Case Study</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Role</span>
+            <span class="case-meta-val">Data Analyst (End-to-End)</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Core Tools</span>
+            <span class="case-meta-val">SQL • Power BI • DAX</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Domain</span>
+            <span class="case-meta-val">Quick Commerce / Operations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Dashboard Evidence & KPI Strip -->
+    <section class="dashboard-showcase-section" aria-label="Dashboard Visual Showcase">
+      <div class="container">
+        <div class="dashboard-viewer-wrap">
+          <div class="viewer-header-bar">
+            <div class="viewer-title-group">
+              <span class="live-dot-green"></span>
+              <strong style="color:var(--color-warm-white); font-size:0.9rem;">Power BI Interactive Dashboard (Simulated View)</strong>
+            </div>
+            <span style="font-size:0.75rem; color:var(--color-orange); font-weight:700;">Click image to enlarge 🔍</span>
+          </div>
+
+          <div class="viewer-screen">
+            <img src="../../assets/images/blinkit_dashboard.jpg" alt="Blinkit Quick Commerce Power BI Dashboard showing order volumes, sales by category, and regional SLA map" class="viewer-image">
+          </div>
+
+          <!-- KPI Strip -->
+          <div class="kpi-metrics-strip">
+            <div class="kpi-tile">
+              <span class="kpi-number">28.4K</span>
+              <span class="kpi-label">Total Monthly Orders</span>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-number">₹1.87 Cr</span>
+              <span class="kpi-label">Gross Merchandise Value</span>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-number">14.2 min</span>
+              <span class="kpi-label">Avg. Delivery Fulfillment</span>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-number">91.5%</span>
+              <span class="kpi-label">SLA Delivery Adherence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Case Study Narrative -->
+    <section class="case-content-section" aria-label="Case Study Narrative">
+      <div class="container">
+        <div class="case-layout-grid">
+          
+          <!-- Left Column: Problem, Approach, Insights, Skills, SQL -->
+          <div class="case-body-flow">
+            
+            <!-- Business Problem -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Business Problem</h2>
+              <p class="case-text">
+                Operations and category teams needed a consolidated view of order volumes, revenue, and delivery performance to spot trends across regions and product categories. Without unified reporting, operational managers had to stitch together fragmented transactional extracts, leading to delayed fulfillment bottleneck identification and missed inventory rebalancing opportunities.
+              </p>
+            </article>
+
+            <!-- Analytical Approach -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Analytical Approach</h2>
+              <p class="case-text">
+                To solve this challenge, I designed an end-to-end analytical pipeline structured across three core phases:
+              </p>
+              <ul class="findings-checklist" style="margin-bottom: 24px;">
+                <li>
+                  <strong>SQL Extraction & Cleansing:</strong> Wrote multi-stage SQL queries with Common Table Expressions (CTEs) to handle null values, remove duplicate order logs, parse delivery timestamps, and calculate dispatch latency.
+                </li>
+                <li>
+                  <strong>Data Modeling:</strong> Built a star-schema model in Power BI linking Fact Orders with Dimension Tables (Dim_Stores, Dim_Products, Dim_Calendar, Dim_Geography).
+                </li>
+                <li>
+                  <strong>DAX Measure Engineering:</strong> Formulated custom DAX measures for dynamic SLA calculation, Year-over-Year revenue growth, and weighted fulfillment time.
+                </li>
+                <li>
+                  <strong>Executive Visual Architecture:</strong> Designed a responsive, high-contrast user interface with drill-through capability from high-level regional views down to store-level performance.
+                </li>
+              </ul>
+
+              <!-- SQL Query Artifact Showcase -->
+              <div class="code-showcase-box">
+                <div class="code-header">
+                  <span>SQL • Regional Fulfillment & SLA Performance Query</span>
+                  <button type="button" class="btn-copy-code" data-target="sql-blinkit-code">Copy SQL</button>
+                </div>
+                <pre class="code-pre"><code id="sql-blinkit-code">WITH DeliveryMetrics AS (
+    SELECT 
+        o.order_id,
+        o.store_id,
+        s.region_name,
+        p.category_name,
+        o.order_value,
+        DATEDIFF(MINUTE, o.order_placed_at, o.delivered_at) AS delivery_duration_min,
+        CASE 
+            WHEN DATEDIFF(MINUTE, o.order_placed_at, o.delivered_at) <= 15 THEN 1 
+            ELSE 0 
+        END AS is_within_sla
+    FROM fact_orders o
+    JOIN dim_stores s ON o.store_id = s.store_id
+    JOIN dim_products p ON o.product_id = p.product_id
+    WHERE o.order_status = 'Delivered'
+      AND o.order_date >= DATEADD(MONTH, -1, GETDATE())
+)
+SELECT 
+    region_name,
+    category_name,
+    COUNT(order_id) AS total_orders,
+    SUM(order_value) AS total_revenue,
+    ROUND(AVG(delivery_duration_min * 1.0), 2) AS avg_delivery_time,
+    ROUND((SUM(is_within_sla) * 100.0) / COUNT(order_id), 2) AS sla_adherence_pct
+FROM DeliveryMetrics
+GROUP BY region_name, category_name
+ORDER BY total_revenue DESC;</code></pre>
+              </div>
+
+              <!-- Sample DAX Measure -->
+              <div class="code-showcase-box">
+                <div class="code-header">
+                  <span>DAX • Dynamic SLA Adherence Measure</span>
+                  <button type="button" class="btn-copy-code" data-target="dax-blinkit-code">Copy DAX</button>
+                </div>
+                <pre class="code-pre"><code id="dax-blinkit-code">SLA Adherence % = 
+VAR TotalDelivered = 
+    CALCULATE(
+        COUNTROWS(fact_orders),
+        fact_orders[order_status] = "Delivered"
+    )
+VAR DeliveredWithinSLA = 
+    CALCULATE(
+        COUNTROWS(fact_orders),
+        fact_orders[delivery_duration_min] <= 15,
+        fact_orders[order_status] = "Delivered"
+    )
+RETURN
+    DIVIDE(DeliveredWithinSLA, TotalDelivered, 0)</code></pre>
+              </div>
+            </article>
+
+            <!-- Key Insights -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Key Insights Surfaced</h2>
+              <p class="case-text">
+                Through multidimensional slicing in Power BI, the analysis revealed actionable operational dynamics:
+              </p>
+              <ul class="findings-checklist">
+                <li>
+                  <strong>Category Revenue Dominance:</strong> Fresh Fruits & Vegetables and Daily Staples accounted for the highest order frequencies and revenue volume across urban clusters.
+                </li>
+                <li>
+                  <strong>Regional Bottlenecks:</strong> Certain high-density micro-markets experienced delivery latency peaks between 6:00 PM – 9:00 PM, identifying the exact dark stores requiring additional delivery fleet capacity.
+                </li>
+                <li>
+                  <strong>Basket Size Correlation:</strong> Orders bundling personal care items alongside grocery staples yielded a significantly higher Average Order Value (AOV), highlighting cross-merchandising potential.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Skills Demonstrated -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Skills Demonstrated</h2>
+              <p class="case-text">
+                Applied SQL data preparation, Power BI relational data modeling, DAX measure creation, and dashboard visual hierarchy end-to-end — from raw transactional tables to an executive-ready report that directly supports rapid operational decisions.
+              </p>
+            </article>
+
+          </div>
+
+          <!-- Right Sidebar: Evidence, Tools, Disclaimer -->
+          <aside class="case-sidebar">
+            
+            <!-- Quick Tools Summary Card -->
+            <div class="sidebar-info-card">
+              <h3 class="sidebar-title">Analytics Stack</h3>
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; font-size:0.875rem;">
+                <li><strong style="color:var(--color-orange);">SQL:</strong> CTEs, Aggregate Windows, Data Cleaning</li>
+                <li><strong style="color:var(--color-orange);">Power BI:</strong> Star Schema, Slicers, Custom Tooltips</li>
+                <li><strong style="color:var(--color-orange);">DAX:</strong> CALCULATE, DIVIDE, Time Intelligence</li>
+                <li><strong style="color:var(--color-orange);">ETL:</strong> Power Query, Type Casting, Missing Value Handlers</li>
+              </ul>
+            </div>
+
+            <!-- Portfolio Disclaimer Card (Strict PRD Compliance) -->
+            <div class="disclaimer-card">
+              <div class="disclaimer-title">Portfolio Notice</div>
+              <p class="disclaimer-text">
+                This project is an independent analytics portfolio case study conducted using structured quick commerce datasets. It does not represent employment by Blinkit, a formal commercial client engagement, or proprietary confidential metrics. Findings and insights are qualitative demonstrations of analytical methodologies.
+              </p>
+            </div>
+
+            <!-- Contact CTA Box -->
+            <div class="sidebar-info-card" style="text-align: center;">
+              <h3 class="sidebar-title" style="font-size:1.1rem;">Need Similar Analysis?</h3>
+              <p style="font-size:0.8125rem; color:var(--color-text-muted); margin-bottom:18px;">
+                Let's discuss how data modeling and custom dashboards can unlock clarity for your business.
+              </p>
+              <a href="../../index.html#contact" class="btn-primary-dark" style="background:var(--color-orange); color:var(--color-bg-black); width:100%; justify-content:center;">
+                Discuss this Project →
+              </a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Case Study Navigation -->
+    <section class="case-nav-footer" aria-label="Next Case Study">
+      <div class="container">
+        <div class="case-nav-bar">
+          <a href="../../index.html#projects" class="case-nav-btn prev">
+            ← Back to All Projects
+          </a>
+          <a href="../netflix-content/index.html" class="case-nav-btn">
+            Next: Netflix Catalog Analysis →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-text">
+        <strong>Pritish Kumar Patra</strong> • Data Analyst • Bhubaneswar, India
+      </div>
+      <a href="#main-case-content" class="footer-back-top">
+        Back to top ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="dashboard-modal" class="image-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content-wrap">
+      <div class="modal-header">
+        <h4 id="modal-title" class="modal-title">Blinkit Dashboard HD Preview</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <img id="modal-img" src="" alt="Dashboard HD Zoom" class="modal-img">
+    </div>
+  </div>
+
+  <div id="toast-msg" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <script src="../../assets/js/case-study.js"></script>
+</body>
+</html>

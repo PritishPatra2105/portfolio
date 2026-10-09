@@ -1,0 +1,195 @@
+Data Analyst Portfolio Website
+Product Requirements Document
+Owner  Pritish Kumar PatraAudience  Designer and developerStatus  Implementation draft based on the supplied resume and inspiration screenshot
+Product decision
+Build a public portfolio that helps recruiters and hiring managers evaluate my analytics skills, explore two dashboard projects, understand my software development background, and contact me. Use the screenshot’s orange and black visual language with readable analytics content and evidence from my resume.
+Positioning
+Present me as a Data Analyst with hands-on training in SQL, Python, Power BI, Tableau and Advanced Excel, transitioning from seven years as a Software Frontend Developer. Keep job titles and dates accurate. The seven years describe software development experience, not seven years in an analyst role.
+Goals and audience
+Recruiters should identify my role, location and core skills within the first screen and reach my resume in one click.
+Hiring managers should understand each project’s business problem, approach and insights, then inspect available dashboard or code evidence.
+Potential collaborators should find my email and understand my strengths in data preparation, modeling and visualization.
+Scope and measurement
+MVP includes a landing page, two project case study pages, resume download, skills, experience, certifications, education, languages and contact. Blog, CMS, authentication, chatbot and live data integrations are future scope.
+Proposed measurement: project opens, resume downloads and email clicks. These measure engagement, not completed hiring or email delivery. Establish a baseline during the first 30 days; no traffic or conversion claims are available in the resume.
+Source rules
+Resume facts are authoritative for this draft. Website wording below is adapted from those facts. Design tokens are proposed approximations of the screenshot; the exact font cannot be identified from the image. Do not copy the reference creator’s identity, awards, work or images.
+Website Structure and Core Requirements
+ID
+Priority
+Requirement and acceptance
+FR01
+P0
+Home / with anchors for About, Projects, Skills, Experience and Contact. Menu links reach the correct sections and sticky navigation does not obscure headings.
+FR02
+P0
+Hero states full name, Data Analyst, Bhubaneswar and five core tools. View Projects scrolls to projects; Download Resume downloads the supplied PDF.
+FR03
+P0
+Two project cards open /projects/blinkit-sales-delivery and /projects/netflix-content. Each shows title, business focus, SQL and Power BI tags, and a descriptive thumbnail if supplied.
+FR04
+P0
+Project detail pages contain problem, approach, insights, skills and evidence. Back to Projects returns to the home project section. Refreshing a detail URL works.
+FR05
+P0
+About, skills and the four experience entries use the content specified in this document. Certifications, education and languages remain visible.
+FR06
+P0
+Contact includes a working mailto link to pritishpatra21@gmail.com. Public phone visibility defaults off; retain the number in the content inventory.
+FR07
+P0
+Mobile navigation uses an accessible menu button with expanded state, Escape dismissal and focus return. All controls work with a keyboard.
+FR08
+P1
+External project, LinkedIn, GitHub and credential links appear only when valid destinations are supplied. No empty links or invented profiles.
+FR09
+P1
+Optional dashboard embed loads after user action and has a static fallback. Public embedding requires a confirmed, shareable dashboard link.
+Primary journeys
+Recruiter: Home → role and tools → Download Resume → Contact. Hiring manager: Home → Projects → case study → available evidence → Contact. Mobile visitor: Menu → selected section → project detail → Back to Projects.
+Section order
+Header → Hero → About → Featured Projects → Skills → How I Work → Experience → Certifications → Education and Languages → Contact → Footer. Project detail pages reuse the header and footer.
+Content maintenance
+Store content in structured local data so titles, dates, links and descriptions can be updated without changing layout. Separate project content from the card component. No administrative interface is required for MVP.
+Visual Design Requirements
+The reference is a two-column montage of a motion designer website. Adapt its large condensed typography, orange feature areas, dark sections, off-white panels and editorial spacing to a continuous portfolio layout.
+Token
+Proposed value
+Application
+Primary orange
+#FF5A00
+Hero background, highlights and primary actions
+Near black
+#070B0C
+Dark sections and text on orange
+Warm off white
+#F2ECEC
+Light sections and text on dark
+Muted gray
+#A8A8A8
+Supporting text on dark; verify contrast
+Display font
+Anton, fallback Impact, sans-serif
+Large condensed uppercase name and headings
+Body font
+Inter, fallback Arial, sans-serif
+Descriptions, navigation, tags and case studies
+Layout and typography
+Desktop: centered content with a 1200px maximum width and 48px side padding. Use a split hero with text left and optional portrait right; a two-column project grid and four-column process section.
+Mobile below 768px: single column, 20px side padding, stacked actions and cards. Tablet uses 32px padding. Content must fit at 320px without horizontal scrolling.
+Hero display text scales from 48px on mobile to 112px on desktop. Section headings scale from 32px to 56px. Body text is 16–18px with 1.5–1.65 line height; avoid condensed fonts for long text.
+Use 8px spacing increments, section padding of 64px mobile and 96px desktop, restrained 8–12px card radii and thin borders. Keep orange as a focused accent outside the hero.
+Composition and imagery
+Hero: orange background, black typography and optional authentic portrait with a dark treatment. About and Projects use dark backgrounds; Skills and Experience use off-white panels. How I Work uses four panels with Prepare highlighted in orange. Replace the screenshot’s motion-work gallery with actual dashboard screenshots.
+No portrait or dashboard screenshot was supplied. Use a text-led hero and neutral project placeholders during implementation. Do not create fake charts that imply project results. Remove placeholders or label unavailable evidence clearly before launch.
+Interaction states
+Buttons have hover, focus and pressed states; use black text on orange buttons. Cards use a subtle border change and no more than 4px movement. A visible focus outline must remain against both light and dark surfaces. Motion is brief and disabled with reduced-motion preferences.
+Readability
+Verify normal text at 4.5:1 contrast and large text at 3:1. Orange text on off-white is limited to decorative or sufficiently large headings unless it passes contrast; use dark text for small labels. The reference’s tiny labels and tight hero layering must be enlarged and separated for readability.
+Proposed Website Copy and Skills
+Hero copy
+Eyebrow  DATA ANALYSTName  PRITISH KUMAR PATRAHeadline  Turning data into clear business insightsSupporting copy  I use SQL, Python, Power BI, Tableau and Excel to clean data, build dashboards and answer business questions. I bring seven years of frontend development experience and a practical understanding of data flow, validation and stakeholder requirements.Location  Bhubaneswar, IndiaActions  View Projects  |  Download Resume
+About copy
+I am a Data Analyst with hands-on training in SQL, Python, Power BI, Tableau and Advanced Excel, transitioning from a frontend development career. My strengths include data cleaning, modeling, dashboard design and translating business requirements into data-driven solutions. Building and testing production applications has strengthened my problem-solving, debugging and analytical thinking. I have worked with REST API data and cross-functional stakeholders in Agile environments, and I bring a focus on reliable delivery, code quality and client communication.
+Skills inventory
+Group
+Resume content to display
+SQL
+Joins, CTEs, Window Functions, Stored Procedures, Query Optimization
+Python
+Pandas, NumPy, Matplotlib
+BI tools
+Power BI: DAX, Power Query, Data Modeling; Tableau
+Excel
+Advanced Excel, Pivot Tables, Power Query, XLOOKUP
+Databases
+SQL Server, PostgreSQL, MongoDB
+Visualization
+Power BI Dashboards, Tableau, Excel Charts, Matplotlib
+Statistics and preparation
+Statistical Analysis, Data Cleaning, Data Validation, ETL Concepts
+Developer tools
+Visual Studio, Visual Studio Code, Postman
+Delivery and version control
+Git, GitHub, Azure DevOps, Agile/Scrum
+How I Work copy
+Proposed process copy derived from the resume’s project approaches.1. Understand: Define the business question and the decisions the analysis should support.2. Prepare: Query, clean and validate the data.3. Analyze: Model the data and explore patterns with SQL and BI tools.4. Communicate: Build interactive dashboards and explain the findings in business terms.
+Contact and footer copy
+Heading  Let’s discuss your data needsBody  Get in touch to discuss data analyst opportunities and analytics projects.Action  Email MeEmail  pritishpatra21@gmail.comFooter  Pritish Kumar Patra • Data Analyst • Bhubaneswar, India
+Project Case Study Content
+Blinkit Sales and Delivery Dashboard
+Card copy: A consolidated view of order volumes, revenue and delivery performance across regions and product categories.Tools: SQL, Power BI
+Business problem: Operations and category teams needed a consolidated view of order volumes, revenue and delivery performance to spot trends across regions and product categories.
+Approach: Wrote SQL queries to extract, clean and aggregate order and delivery data. Built an interactive Power BI dashboard with DAX measures, filters and drill-downs.
+Key insights: Surfaced patterns in order volume and delivery performance by category and region that would support faster operational decisions.
+Skills demonstrated: Applied SQL data preparation, Power BI data modeling and dashboard design end-to-end, from raw data to a report that supports decisions.
+Netflix Content and Viewership Dashboard
+Card copy: Explore genre distribution, release patterns and ratings across a content catalog.Tools: SQL, Power BI
+Business problem: Content teams need visibility into how a catalog breaks down by genre, release timing and ratings to guide content strategy.
+Approach: Used SQL to query and structure the content dataset, then built a Power BI dashboard with DAX measures and interactive visuals.
+Key insights: Highlighted genre distribution, release-pattern trends and ratings breakdowns across the catalog.
+Skills demonstrated: Turned a raw dataset into an interactive, stakeholder-ready BI report using SQL and Power BI together.
+Evidence requirements for both projects
+Retain the resume’s project titles. The Netflix description supports catalog analysis; do not claim audience engagement, watch time or subscriber behavior without additional evidence.
+Each case study supports a dashboard screenshot with meaningful alt text, a dataset source, SQL or repository link, dashboard link and a short note on data limitations. These assets are currently missing.
+Label projects as portfolio projects. Do not suggest employment by Blinkit or Netflix, a client engagement, production deployment or commercial outcomes.
+No project-specific numerical outcomes, dataset sizes, dates or performance gains are supplied. Publish qualitative insights only until supporting evidence is added.
+Case study presentation
+Use a dark title band, then readable light-background sections for problem, approach, insights and skills. Evidence appears beside the approach on desktop and below it on mobile. Hide unavailable evidence buttons rather than using dead links. Retain a visible route back to the project list.
+Experience and Credentials Content
+Senior Frontend Developer at Accenture
+Bengaluru • June 2024 to Present • Internal Project
+Collaborated with backend developers to integrate Azure Function Apps as backend data services and support accurate data flow. Performed cross-browser testing and debugging to validate data display and behavior. Built and optimized reusable UI components and modules. Participated in sprint planning, stand-ups and code reviews to align delivery with stakeholder requirements. Used Git to maintain clean, documented repositories.
+Senior Frontend Developer at Accenture
+Bengaluru • March 2023 to May 2024 • Innovation Hub Project
+Integrated RESTful APIs with backend teams to enable real-time updates and improve data accuracy. Worked with Node.js-based services to streamline processing and improve performance and scalability. Translated product manager and stakeholder requirements into technical solutions. Contributed to Agile sprint planning and code reviews.
+Software Engineer at Infosys
+Bhubaneswar • July 2021 to February 2023 • Network & Provider Project
+Analyzed requirements and aligned objectives with stakeholder needs. The resume reports a 100% success rate in meeting project goals; retain this as a resume-reported claim, not a site-wide KPI, and clarify its measurement before featuring it prominently. Conducted unit testing and output validation, reviewed code quality, resolved application and data issues across production and non-production environments, and communicated directly with clients to gather requirements and resolve issues.
+Software Engineer at Infosys
+Bhubaneswar • May 2019 to June 2021 • Corporate Project
+Analyzed business requirements to guide development priorities. Resolved coding and data-related issues while maintaining timelines. Collaborated with senior developers and cross-functional teams in an Agile environment to deliver features.
+Certifications
+Data Analytics Certification — Excel, Power BI, Tableau, SQL and Python — Coding Ninjas, July 2026
+Microsoft Power BI — PL-300
+Microsoft Azure Fundamentals — AZ-900
+Microsoft Azure Administrator Associate — AZ-104
+Microsoft Azure DevOps Engineer Expert — AZ-400
+Education and languages
+B.Tech, Mechanical EngineeringKalinga Institute of Technology, Odisha, India • 2014 to 2018Languages: English, Hindi, Odia, French. Proficiency levels are not provided.
+Preserve institution wording from the resume; confirm it before publication. Microsoft credentials are listed as supplied; dates, credential IDs and verification links are not available.
+Quality Requirements and Launch Plan
+ID
+Requirement
+Acceptance check
+NFR01
+Accessibility
+Semantic headings, descriptive links, image alt text, visible focus and keyboard access. Verify contrast and reduced motion.
+NFR02
+Responsive behavior
+Review 320px, 375px, 768px, 1024px and 1440px widths. No clipping, overlap or horizontal scrolling.
+NFR03
+Performance targets
+Target LCP ≤2.5s, CLS ≤0.1 and INP ≤200ms at the 75th percentile once field data exists. Before launch, review mobile lab results and eliminate major image or font bottlenecks.
+NFR04
+Search and sharing
+Unique titles and descriptions for all three routes, canonical URLs after domain selection, sitemap, robots file and a social preview. Home title: Pritish Kumar Patra | Data Analyst Portfolio.
+NFR05
+Reliability
+No broken internal links. PDF returns successfully. Direct project routes and unknown-route 404 behavior work on the selected host.
+NFR06
+Security and privacy
+Serve over HTTPS; include no secrets or confidential employer data. Analytics, if added, excludes personal data and follows the selected provider’s consent requirements.
+Implementation guidance
+Recommended approach: a lightweight static website with structured content, reusable project templates and optimized local assets. Choose the framework to suit the builder; the MVP needs no application backend. Load fonts with fallbacks and swap behavior, reserve image dimensions and defer optional embeds. These are proposed build choices, not existing implementation facts.
+Delivery sequence
+1. Content preparation: confirm missing assets and current resume wording; populate content records.2. Design: create desktop and mobile layouts using the proposed tokens.3. Build: implement routes, sections, responsive navigation and downloads.4. Validate: check content against the resume, test interactions and accessibility, and review performance.5. Launch: connect the selected domain and publish only after launch checks pass.
+Outstanding inputs
+Needed for a complete evidence-led launch: two dashboard screenshots, dataset sources, project repositories or downloadable SQL, and any shareable dashboard links. Optional inputs: portrait, LinkedIn and GitHub URLs, certification verification links and a custom domain. Confirm current Accenture status and education wording. The resume phone number is +91 8908320525; public display remains optional.
+Definition of done
+All P0 requirements pass, all resume content is represented, and no invented metrics, clients, awards or credentials appear.
+Both case studies display accurate content; missing evidence is resolved or clearly omitted. Resume downloads and email actions work.
+Desktop and mobile reviews pass with legible typography, accessible controls, stable layouts and no broken links.
+Pritish reviews the final copy, public contact details and supplied project assets before the website goes live.
+Source register
+Pritish_Kumar_Patra_Resume.pdf, supplied two-page resume: source for identity, skills, projects, employment, certifications, education, languages and contact. image(6).png, supplied inspiration montage: source for approximate palette, typography character and section composition. No external factual research was required.

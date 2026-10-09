@@ -1,0 +1,94 @@
+PRITISH KUMAR PATRA  
+Data Analyst  |  SQL • Python • Power BI • Tableau • Excel • Data Visualization  
+Bhubaneswar, India  •  +91 8908320525  •  pritishpatra21@gmail.com  
+ 
+PROFESSIONAL SUMMARY  
+ 
+Data Analyst with hands-on training in SQL, Python, Power BI, Tableau, and Advanced Excel, transitioning from 7 years of experience 
+as a Software (Frontend) Developer. Skilled in data cleaning, data modeling, dashboard design, and translating business requirements 
+into data-driven solutions. Brings strong problem-solving, debugging, and analytical thinking developed through building and testing 
+production applications, working with data from REST APIs, and collaborating with cross-functional and business stakeholders in 
+Agile environments. Combines technical depth in SQL (joins, CTEs, window functions, stored procedures) and BI tools (DAX, Power 
+Query, data visualization) with a proven track record of reliable delivery, code quality, and client communication.  
+TECHNICAL SKILLS  
+ 
+SQL: Joins, CTEs, Window Functions, Stored Procedures, Query Optimization  
+Python: Pandas, NumPy, Matplotlib  
+BI Tools: Power BI (DAX, Power Query, Data Modeling), Tableau  
+Excel: Advanced Excel, Pivot Tables, Power Query, XLOOKUP  
+Databases: SQL Server, PostgreSQL, MongoDB  
+Visualization: Power BI Dashboards, Tableau, Excel Charts, Matplotlib  
+Statistics & Data Prep: Statistical Analysis, Data Cleaning, Data Validation, ETL Concepts  
+Developer Tools: Visual Studio, Visual Studio Code, Postman  
+Version Control & DevOps: Git, GitHub, Azure DevOps, Agile/Scrum  
+DATA ANALYTICS PROJECTS  
+ 
+Blinkit Sales & Delivery Dashboard  |  SQL, Power BI  
+Business Problem: Operations and category teams needed a consolidated view of order volumes, revenue, and delivery performance to spot 
+trends across regions and product categories.  
+Approach: Wrote SQL queries to extract, clean, and aggregate order and delivery data; built an interactive Power BI dashboard with DAX 
+measures, filters, and drill-downs.  
+Key Insights: Surfaced patterns in order volume and delivery performance by category and region that would support faster operational 
+decisions.  
+Impact / Skills Demonstrated: Applied SQL data preparation, Power BI data modeling, and dashboard design end-to-end — from raw data to 
+a decision-ready report.  
+Netflix Content & Viewership Dashboard  |  SQL, Power BI  
+Business Problem: Content teams need visibility into how a catalog breaks down by genre, release timing, and ratings to guide content 
+strategy.  
+Approach: Used SQL to query and structure the content dataset, then built a Power BI dashboard with DAX measures and interactive visuals. 
+Key Insights: Highlighted genre distribution, release-pattern trends, and ratings breakdowns across the catalog.  
+Impact / Skills Demonstrated: Demonstrated ability to turn a raw dataset into an interactive, stakeholder-ready BI report using SQL + Power 
+BI together.  
+PROFESSIONAL EXPERIENCE  
+ 
+Senior Frontend Developer — Accenture, Bengaluru  
+06/2024 – Present  
+Internal Project  
+• Collaborated closely with backend developers to integrate Azure Function Apps as backend data services, ensuring accurate, 
+seamless data flow between systems.  
+• Performed cross-browser testing and debugging to validate data display and application behavior, reducing inconsistencies across 
+environments.  
+• Built and optimized reusable UI components and modules, improving maintainability and supporting scalable, data-driven features.  
+
+• Participated in Agile ceremonies (sprint planning, stand-ups, code reviews) to align technical delivery with business and 
+stakeholder requirements.  
+• Used Git for version control, maintaining clean, well-documented repositories to support collaborative development.  
+Senior Frontend Developer — Accenture, Bengaluru  
+03/2023 – 05/2024  
+Innovation Hub Project  
+• Partnered with backend teams to integrate RESTful APIs into the application, enabling real-time data updates and improving data 
+accuracy for end users.  
+• Worked with Node.js-based backend services to streamline data processing, improving application performance and scalability.  
+• Converted business requirements from product managers and stakeholders into technical solutions, aligning delivery with business 
+goals.  
+• Followed Agile methodology, contributing to sprint planning and code reviews to ensure timely, quality delivery.  
+Software Engineer — Infosys, Bhubaneswar  
+07/2021 – 02/2023  
+Network & Provider Project  
+• Analyzed project requirements and aligned objectives with stakeholder needs, achieving a 100% success rate in meeting project 
+goals.  
+• Conducted unit testing and output validation to improve software reliability and reduce defects.  
+• Reviewed code for quality and accuracy, providing feedback to maintain adherence to standards.  
+• Resolved application and data-related issues across production and non-production environments, supporting continuous 
+operations.  
+• Communicated directly with clients to gather requirements and resolve issues, ensuring solutions met business expectations.  
+Software Engineer — Infosys, Bhubaneswar  
+05/2019 – 06/2021  
+Corporate Project  
+• Analyzed and interpreted business requirements to guide development priorities.  
+• Resolved coding and data-related issues efficiently, maintaining project timelines.  
+• Collaborated with senior developers and cross-functional teams in an Agile environment to ensure timely feature delivery.  
+CERTIFICATIONS  
+ 
+• Data Analytics Certification — Excel, Power BI, Tableau, SQL, and Python — Coding Ninjas, July 2026  
+• Microsoft Power BI – PL-300 
+• Microsoft Azure Fundamentals — AZ-900  
+• Microsoft Azure Administrator Associate — AZ-104  
+• Microsoft Azure DevOps Engineer Expert — AZ-400  
+EDUCATION  
+ 
+B.Tech, Mechanical Engineering  
+Kalinga Institute of Technology, Odisha, India — 2014 – 2018  
+LANGUAGES  
+ 
+English, Hindi, Odia, French  

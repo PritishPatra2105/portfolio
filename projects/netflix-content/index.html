@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Content & Viewership Dashboard | Pritish Kumar Patra</title>
+  <meta name="description" content="Data Analytics Case Study: Explore genre distribution, release timing patterns, and ratings breakdown across a global streaming catalog using SQL and Power BI.">
+  <meta name="author" content="Pritish Kumar Patra">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Netflix Content & Viewership Dashboard | Case Study">
+  <meta property="og:description" content="End-to-end Power BI & SQL Content Catalog Analysis by Pritish Kumar Patra.">
+  <meta property="og:image" content="../../assets/images/netflix_dashboard.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/case-study.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-case-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="../../index.html" class="logo-badge" aria-label="Return to homepage">
+        <div class="logo-symbol">P</div>
+        <div class="logo-text">
+          <span class="logo-name">Pritish Patra</span>
+          <span class="logo-role">Data Analyst</span>
+        </div>
+      </a>
+
+      <nav aria-label="Case Study Navigation">
+        <ul class="nav-menu">
+          <li><a href="../../index.html#projects" class="nav-link">← Back to Projects</a></li>
+          <li><a href="../../index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="../../index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="../../Pritish_Kumar_Patra_Resume.pdf" download="Pritish_Kumar_Patra_Resume.pdf" class="nav-cta-btn">
+              Resume ↓
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-case-content">
+    
+    <!-- Hero / Title Band -->
+    <section class="case-study-hero" aria-label="Case Study Overview">
+      <div class="container">
+        <a href="../../index.html#projects" class="case-breadcrumb" id="back-to-projects-link">
+          ← Back to All Projects
+        </a>
+        <span class="section-label">Media & Entertainment Catalog Analytics</span>
+        <h1 class="case-title">Netflix Content and Viewership Dashboard</h1>
+        <p style="color:var(--color-text-muted); font-size: 1.15rem; max-width: 760px; line-height: 1.6;">
+          Explore genre distribution, release timing patterns, and ratings breakdown across a global streaming catalog to inform data-driven content programming strategies.
+        </p>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Project Type</span>
+            <span class="case-meta-val">Portfolio Case Study</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Role</span>
+            <span class="case-meta-val">Data Analyst (End-to-End)</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Core Tools</span>
+            <span class="case-meta-val">SQL • Power BI • DAX</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Focus Area</span>
+            <span class="case-meta-val">Catalog Composition & Trends</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Dashboard Evidence & KPI Strip -->
+    <section class="dashboard-showcase-section" aria-label="Dashboard Visual Showcase">
+      <div class="container">
+        <div class="dashboard-viewer-wrap">
+          <div class="viewer-header-bar">
+            <div class="viewer-title-group">
+              <span class="live-dot-green"></span>
+              <strong style="color:var(--color-warm-white); font-size:0.9rem;">Power BI Interactive Dashboard (Simulated View)</strong>
+            </div>
+            <span style="font-size:0.75rem; color:var(--color-orange); font-weight:700;">Click image to enlarge 🔍</span>
+          </div>
+
+          <div class="viewer-screen">
+            <img src="../../assets/images/netflix_dashboard.jpg" alt="Netflix Content and Viewership Power BI Dashboard showing title count, movie vs TV split, top genres, and ratings distribution" class="viewer-image">
+          </div>
+
+          <!-- KPI Strip -->
+          <div class="kpi-metrics-strip">
+            <div class="kpi-tile">
+              <span class="kpi-number">7,842</span>
+              <span class="kpi-label">Total Catalog Titles</span>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-number">67% / 33%</span>
+              <span class="kpi-label">Movie vs TV Show Split</span>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-number">124</span>
+              <span class="kpi-label">Countries Represented</span>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-number">Top 3</span>
+              <span class="kpi-label">Drama, Comedy & Docu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Case Study Narrative -->
+    <section class="case-content-section" aria-label="Case Study Narrative">
+      <div class="container">
+        <div class="case-layout-grid">
+          
+          <!-- Left Column: Problem, Approach, Insights, Skills, SQL -->
+          <div class="case-body-flow">
+            
+            <!-- Business Problem -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Business Problem</h2>
+              <p class="case-text">
+                Content strategy and programming teams require clear, continuous visibility into how a vast entertainment catalog breaks down across genres, release eras, geographic origins, and audience ratings. Without an aggregated, interactive analytical model, identifying underserved genre segments or shifts in catalog renewal patterns is cumbersome and error-prone.
+              </p>
+            </article>
+
+            <!-- Analytical Approach -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Analytical Approach</h2>
+              <p class="case-text">
+                Used SQL to query, clean, and structure the catalog dataset, resolving multi-value delimitations and standardizing dates. Built an interactive Power BI report with DAX measures and coordinated visual filters:
+              </p>
+              <ul class="findings-checklist" style="margin-bottom: 24px;">
+                <li>
+                  <strong>Data Normalization via SQL:</strong> Unnested multi-value genre strings and comma-separated cast/country attributes into clean relational structures using cross-joins and string tokenization functions.
+                </li>
+                <li>
+                  <strong>Temporal Modeling:</strong> Standardized dates added to the platform versus original theatrical/broadcast release years to evaluate catalog vintage versus acquisition speed.
+                </li>
+                <li>
+                  <strong>DAX Measures:</strong> Implemented calculated measures for Movies vs TV Show ratios, decade-over-decade title additions, and rating tier concentrations.
+                </li>
+                <li>
+                  <strong>Visual Hierarchy:</strong> Engineered linked slicers (Year, Content Type, Genre, Country) with cross-highlighting across bar charts, trend lines, and donut distributions.
+                </li>
+              </ul>
+
+              <!-- SQL Query Artifact Showcase -->
+              <div class="code-showcase-box">
+                <div class="code-header">
+                  <span>SQL • Genre Breakdown & Decade Growth Aggregation</span>
+                  <button type="button" class="btn-copy-code" data-target="sql-netflix-code">Copy SQL</button>
+                </div>
+                <pre class="code-pre"><code id="sql-netflix-code">WITH CleanCatalog AS (
+    SELECT 
+        show_id,
+        type,
+        title,
+        release_year,
+        rating,
+        -- Group into decade buckets for trend analysis
+        CONCAT(FLOOR(release_year / 10) * 10, 's') AS release_decade,
+        TRIM(value) AS primary_genre
+    FROM netflix_titles
+    CROSS APPLY STRING_SPLIT(listed_in, ',')
+    WHERE release_year IS NOT NULL
+      AND rating IS NOT NULL
+)
+SELECT 
+    primary_genre,
+    type,
+    release_decade,
+    COUNT(DISTINCT show_id) AS title_count,
+    ROUND(
+        COUNT(DISTINCT show_id) * 100.0 / 
+        SUM(COUNT(DISTINCT show_id)) OVER(PARTITION BY release_decade), 
+        2
+    ) AS pct_of_decade_total
+FROM CleanCatalog
+GROUP BY primary_genre, type, release_decade
+HAVING COUNT(DISTINCT show_id) >= 50
+ORDER BY release_decade DESC, title_count DESC;</code></pre>
+              </div>
+
+              <!-- Sample DAX Measure -->
+              <div class="code-showcase-box">
+                <div class="code-header">
+                  <span>DAX • Content Split Ratio & Maturity Classification</span>
+                  <button type="button" class="btn-copy-code" data-target="dax-netflix-code">Copy DAX</button>
+                </div>
+                <pre class="code-pre"><code id="dax-netflix-code">Movie Title % = 
+VAR TotalCatalog = COUNTROWS('Netflix_Titles')
+VAR MovieCount = 
+    CALCULATE(
+        COUNTROWS('Netflix_Titles'),
+        'Netflix_Titles'[type] = "Movie"
+    )
+RETURN
+    DIVIDE(MovieCount, TotalCatalog, 0)</code></pre>
+              </div>
+            </article>
+
+            <!-- Key Insights -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Key Insights Surfaced</h2>
+              <p class="case-text">
+                The structured catalog analysis revealed clear structural characteristics of the catalog:
+              </p>
+              <ul class="findings-checklist">
+                <li>
+                  <strong>Format Distribution:</strong> Feature movies represented approximately two-thirds (67%) of total titles, while episodic TV series comprised the remaining 33%.
+                </li>
+                <li>
+                  <strong>Dominant Content Genres:</strong> Dramas, International Films/Series, and Comedies formed the core majority of offerings across both movie and television categories.
+                </li>
+                <li>
+                  <strong>Acquisition Era Trajectory:</strong> Over 80% of catalog titles were originally released after 2010, reflecting a heavy strategic focus on modern, high-definition catalog assets.
+                </li>
+                <li>
+                  <strong>Maturity Rating Profile:</strong> TV-MA and TV-14 classifications dominated the television offerings, underscoring targeting towards young-adult and mature demographic segments.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Skills Demonstrated -->
+            <article class="case-card-block">
+              <h2 class="case-block-heading">Skills Demonstrated</h2>
+              <p class="case-text">
+                Demonstrated ability to turn a raw, unformatted catalog dataset into an interactive, stakeholder-ready BI report using SQL for parsing and structuring, combined with Power BI for dimensional modeling and user-friendly visual synthesis.
+              </p>
+            </article>
+
+          </div>
+
+          <!-- Right Sidebar: Evidence, Tools, Disclaimer -->
+          <aside class="case-sidebar">
+            
+            <!-- Quick Tools Summary Card -->
+            <div class="sidebar-info-card">
+              <h3 class="sidebar-title">Analytics Stack</h3>
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; font-size:0.875rem;">
+                <li><strong style="color:var(--color-orange);">SQL:</strong> STRING_SPLIT, Window Partitioning, CTEs</li>
+                <li><strong style="color:var(--color-orange);">Power BI:</strong> Dynamic Slicers, Donut Charts, Trend Plots</li>
+                <li><strong style="color:var(--color-orange);">DAX:</strong> Title Distribution %, Filter Context Control</li>
+                <li><strong style="color:var(--color-orange);">Data Cleansing:</strong> Rating Standardization, Decade Buckets</li>
+              </ul>
+            </div>
+
+            <!-- Portfolio Disclaimer Card (Strict PRD Compliance) -->
+            <div class="disclaimer-card">
+              <div class="disclaimer-title">Portfolio Notice & Scope</div>
+              <p class="disclaimer-text">
+                This project represents a portfolio catalog composition study conducted on open streaming datasets. Per PRD guidelines, this analysis evaluates catalog distribution, release timing, and ratings. It does not measure or claim individual viewership, watch-time telemetry, subscriber engagement, or confidential Netflix internal business metrics.
+              </p>
+            </div>
+
+            <!-- Contact CTA Box -->
+            <div class="sidebar-info-card" style="text-align: center;">
+              <h3 class="sidebar-title" style="font-size:1.1rem;">Explore Collaboration</h3>
+              <p style="font-size:0.8125rem; color:var(--color-text-muted); margin-bottom:18px;">
+                Looking for a data analyst who can translate unstructured data into crystal-clear dashboards?
+              </p>
+              <a href="../../index.html#contact" class="btn-primary-dark" style="background:var(--color-orange); color:var(--color-bg-black); width:100%; justify-content:center;">
+                Discuss this Project →
+              </a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Case Study Navigation -->
+    <section class="case-nav-footer" aria-label="Previous Case Study">
+      <div class="container">
+        <div class="case-nav-bar">
+          <a href="../blinkit-sales-delivery/index.html" class="case-nav-btn prev">
+            ← Previous: Blinkit Delivery Ops
+          </a>
+          <a href="../../index.html#projects" class="case-nav-btn">
+            Back to All Projects →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-text">
+        <strong>Pritish Kumar Patra</strong> • Data Analyst • Bhubaneswar, India
+      </div>
+      <a href="#main-case-content" class="footer-back-top">
+        Back to top ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="dashboard-modal" class="image-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content-wrap">
+      <div class="modal-header">
+        <h4 id="modal-title" class="modal-title">Netflix Dashboard HD Preview</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <img id="modal-img" src="" alt="Dashboard HD Zoom" class="modal-img">
+    </div>
+  </div>
+
+  <div id="toast-msg" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <script src="../../assets/js/case-study.js"></script>
+</body>
+</html>

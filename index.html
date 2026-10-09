@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pritish Kumar Patra | Data Analyst Portfolio</title>
+  <meta name="description" content="Data Analyst with hands-on training in SQL, Python, Power BI, Tableau and Advanced Excel, transitioning from 7 years of software development. Explore analytics projects, skills, and resume.">
+  <meta name="author" content="Pritish Kumar Patra">
+  <meta name="keywords" content="Data Analyst, SQL, Power BI, Python, Tableau, Excel, Data Visualization, Bhubaneswar, Accenture, Infosys, Portfolio">
+  
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:title" content="Pritish Kumar Patra | Data Analyst Portfolio">
+  <meta property="og:description" content="Turning data into clear business insights. SQL • Python • Power BI • Tableau • Advanced Excel.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/blinkit_dashboard.jpg">
+
+  <!-- Google Fonts: Anton (Display Condensed) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Screen Reader Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Widescreen Desktop Margin Side Rails -->
+  <aside class="desktop-side-rail left-rail" aria-label="Quick Actions & Identity">
+    <div class="rail-line"></div>
+    <span class="rail-vertical-text">PRITISH PATRA • DATA ANALYST</span>
+    <div class="rail-actions">
+      <a href="mailto:pritishpatra21@gmail.com" class="rail-icon-btn" title="Email: pritishpatra21@gmail.com" aria-label="Send Email">✉</a>
+      <a href="Pritish_Kumar_Patra_Resume.pdf" download="Pritish_Kumar_Patra_Resume.pdf" class="rail-icon-btn" title="Download Resume PDF" aria-label="Download Resume">↓</a>
+    </div>
+  </aside>
+
+  <aside class="desktop-side-rail right-rail" aria-label="Quick Section Navigation">
+    <div class="rail-line"></div>
+    <span class="rail-vertical-text">BHUBANESWAR, INDIA • 2026</span>
+    <nav class="rail-nav-anchors" aria-label="Side rail quick jump">
+      <a href="#about" class="rail-dot" title="About Me" aria-label="Jump to About Me"></a>
+      <a href="#projects" class="rail-dot" title="Featured Projects" aria-label="Jump to Projects"></a>
+      <a href="#how-i-work" class="rail-dot" title="Work Process" aria-label="Jump to Process"></a>
+      <a href="#skills" class="rail-dot" title="Technical Skills" aria-label="Jump to Skills"></a>
+      <a href="#experience" class="rail-dot" title="Experience" aria-label="Jump to Experience"></a>
+      <a href="#contact" class="rail-dot" title="Contact" aria-label="Jump to Contact"></a>
+    </nav>
+  </aside>
+
+  <!-- ==========================================================================
+       SITE HEADER / STICKY NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-badge" aria-label="Pritish Kumar Patra Portfolio Home">
+        <div class="logo-symbol">P</div>
+        <div class="logo-text">
+          <span class="logo-name">Pritish Patra</span>
+          <span class="logo-role">Data Analyst</span>
+        </div>
+      </a>
+
+      <!-- Live Clock & Status (Inspired by the reference screenshot) -->
+      <div class="header-meta" aria-label="Status & Local Time">
+        <div class="live-clock-pill">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="live-clock">12:00:00 PM IST</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#how-i-work" class="nav-link">Process</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="Pritish_Kumar_Patra_Resume.pdf" download="Pritish_Kumar_Patra_Resume.pdf" class="nav-cta-btn" id="header-resume-btn">
+              Resume <span>↓</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation menu" aria-controls="mobile-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Featured Projects</a></li>
+      <li><a href="#skills" class="nav-link">Technical Skills</a></li>
+      <li><a href="#how-i-work" class="nav-link">How I Work</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#education" class="nav-link">Education & Languages</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 14px;">
+      <a href="Pritish_Kumar_Patra_Resume.pdf" download="Pritish_Kumar_Patra_Resume.pdf" class="btn-primary-dark" style="background:var(--color-orange); color:var(--color-bg-black); text-align: center;">
+        Download Resume (PDF) ↓
+      </a>
+      <a href="mailto:pritishpatra21@gmail.com" class="btn-secondary-outline" style="border-color: var(--color-warm-white); color: var(--color-warm-white); text-align:center;">
+        Email Me
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- HERO SECTION (Split Editorial: Orange Block + Dark Portrait with Overlay) -->
+    <section class="hero-section" aria-label="Hero Section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: High-Impact Orange Block -->
+          <div class="hero-left-block">
+            <div class="hero-meta-top">
+              <span class="hero-location">📍 Bhubaneswar, India</span>
+              <span class="hero-tag">Available for Roles</span>
+            </div>
+
+            <div class="hero-title-group">
+              <span class="hero-eyebrow">Data Analyst</span>
+              <h1 class="hero-giant-name">Pritish<br>Patra</h1>
+              <p class="hero-headline">Turning data into clear business insights.</p>
+              <p class="hero-desc">
+                I use SQL, Python, Power BI, Tableau and Excel to clean data, build dashboards and answer business questions. I bring seven years of frontend development experience and a practical understanding of data flow, validation and stakeholder requirements.
+              </p>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary-dark" id="hero-view-projects-btn">
+                View Projects <span>→</span>
+              </a>
+              <a href="Pritish_Kumar_Patra_Resume.pdf" download="Pritish_Kumar_Patra_Resume.pdf" class="btn-secondary-outline" id="hero-download-resume-btn">
+                Download Resume <span>↓</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Dramatic Editorial Portrait & Services Overlay -->
+          <div class="hero-right-block">
+            <div class="hero-portrait-wrap">
+              <img src="assets/images/pritish_patra_side_profile.jpg?v=4" alt="Pritish Kumar Patra - Data Analyst" class="hero-portrait-img">
+              <div class="hero-portrait-overlay"></div>
+            </div>
+
+            <!-- Services Stack (Direct inspiration from screenshot right column) -->
+            <div class="hero-services-stack">
+              <div class="hero-services-title">• Core Stack</div>
+              <ul class="hero-services-list">
+                <li>SQL (PostgreSQL, SQL Server)</li>
+                <li>Power BI (DAX, Power Query)</li>
+                <li>Python (Pandas, NumPy)</li>
+                <li>Tableau & Advanced Excel</li>
+                <li>ETL & Data Modeling</li>
+              </ul>
+            </div>
+
+            <!-- Bottom Stat Badge -->
+            <div class="hero-stat-card">
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">7+</span>
+                <span class="hero-stat-label">Years Software Background</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">100%</span>
+                <span class="hero-stat-label">Project Goal Delivery*</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION (Editorial Typography with Highlighting)
+         ========================================================================== -->
+    <section id="about" class="about-section" aria-label="About Me">
+      <div class="container">
+        <span class="section-label">About Me</span>
+        <div class="about-editorial-wrap">
+          <div class="about-statement">
+            I am a <strong>Data Analyst</strong> with hands-on training in <strong>SQL, Python, Power BI, Tableau and Advanced Excel</strong>, transitioning from a frontend development career. 
+            My strengths include <span class="highlight-orange">data cleaning, data modeling, dashboard design</span>, and translating complex business requirements into data-driven solutions. 
+            Building and testing production applications has sharpened my <strong>problem-solving, debugging, and analytical thinking</strong>. 
+            I have worked with <strong>REST API data</strong> and cross-functional stakeholders in Agile environments, and I bring a proven focus on <span class="highlight-orange">reliable delivery, code quality, and client communication</span>.
+          </div>
+
+          <aside class="about-sidebar">
+            <div class="about-stat-box">
+              <div class="about-stat-num">05</div>
+              <div class="about-stat-text">Core Analytics Tools: SQL, Python, Power BI, Tableau & Excel</div>
+            </div>
+            <div class="about-stat-box">
+              <div class="about-stat-num">07</div>
+              <div class="about-stat-text">Years of Engineering Experience at Accenture & Infosys</div>
+            </div>
+            <div class="about-stat-box">
+              <div class="about-stat-num">05</div>
+              <div class="about-stat-text">Industry Certifications in Data Analytics, Power BI & Azure</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION (WHAT I OFFER)
+         ========================================================================== -->
+    <section id="projects" class="projects-section" aria-label="Featured Projects">
+      <div class="container">
+        <div class="projects-header">
+          <div class="projects-header-left">
+            <div class="projects-counter">01 / 02</div>
+            <h2 class="section-heading">Featured Projects</h2>
+            <p style="color:var(--color-text-muted); max-width: 560px;">
+              End-to-end data analytics case studies demonstrating SQL data extraction, business modeling, and stakeholder-ready Power BI reporting.
+            </p>
+          </div>
+          <div>
+            <span class="section-label" style="margin-bottom:0;">Portfolio Case Studies</span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Blinkit Sales & Delivery Dashboard -->
+          <article class="project-card" id="project-card-blinkit">
+            <div class="project-thumbnail-wrap">
+              <img src="assets/images/blinkit_dashboard.jpg" alt="Blinkit Sales and Delivery Power BI Dashboard Preview" class="project-thumbnail" loading="lazy">
+              <span class="project-badge-pill">Quick Commerce Analytics</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">DAX</span>
+                <span class="tech-tag">Data Cleaning</span>
+              </div>
+              <h3 class="project-title">Blinkit Sales and Delivery Dashboard</h3>
+              <p class="project-desc">
+                A consolidated view of order volumes, revenue, and delivery performance across regions and product categories to spot operational trends.
+              </p>
+              <ul class="project-highlights-list">
+                <li>Wrote SQL queries to extract, clean, and aggregate order and delivery records.</li>
+                <li>Engineered interactive Power BI dashboard with DAX KPI measures, filters, and drill-downs.</li>
+                <li>Surfaced patterns in order volume and delivery SLA fulfillment by category and region.</li>
+              </ul>
+              <div class="project-footer-actions">
+                <a href="projects/blinkit-sales-delivery/index.html" class="btn-card-link" id="link-blinkit-case-study">
+                  Explore Case Study <span>→</span>
+                </a>
+                <button class="btn-preview-modal" data-lightbox-src="assets/images/blinkit_dashboard.jpg" data-lightbox-title="Blinkit Quick Commerce Performance Dashboard">
+                  Preview Dashboard 🔍
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Netflix Content & Viewership Dashboard -->
+          <article class="project-card" id="project-card-netflix">
+            <div class="project-thumbnail-wrap">
+              <img src="assets/images/netflix_dashboard.jpg" alt="Netflix Content and Viewership Power BI Dashboard Preview" class="project-thumbnail" loading="lazy">
+              <span class="project-badge-pill">Catalog Analytics</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">DAX</span>
+                <span class="tech-tag">Data Modeling</span>
+              </div>
+              <h3 class="project-title">Netflix Content and Viewership Dashboard</h3>
+              <p class="project-desc">
+                Explore genre distribution, release timing patterns, and ratings across a global catalog to guide data-driven content strategy.
+              </p>
+              <ul class="project-highlights-list">
+                <li>Structured raw catalog dataset using advanced SQL queries, CTEs, and filtering.</li>
+                <li>Built multi-dimensional Power BI visualizations for title distributions and release trends.</li>
+                <li>Highlighted genre concentrations, rating classifications, and movie vs TV show splits.</li>
+              </ul>
+              <div class="project-footer-actions">
+                <a href="projects/netflix-content/index.html" class="btn-card-link" id="link-netflix-case-study">
+                  Explore Case Study <span>→</span>
+                </a>
+                <button class="btn-preview-modal" data-lightbox-src="assets/images/netflix_dashboard.jpg" data-lightbox-title="Netflix Content Catalog & Release Analysis Dashboard">
+                  Preview Dashboard 🔍
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOW I WORK SECTION (4-Step Process with Orange Step 2 Card)
+         ========================================================================== -->
+    <section id="how-i-work" class="process-section" aria-label="Work Process">
+      <div class="container">
+        <div class="process-header">
+          <div>
+            <span class="section-label">Work Process</span>
+            <h2 class="section-heading">How I Work</h2>
+          </div>
+          <p class="process-subtitle">
+            A simple, structured process designed to turn complex, messy data into high-impact operational dashboards and clear executive decisions.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          
+          <!-- Step 1: Understand -->
+          <div class="process-card">
+            <div class="process-step-num">01.</div>
+            <div>
+              <h3 class="process-card-title">Understand</h3>
+              <p class="process-card-desc">
+                Define the core business question, understand operational challenges, and identify the key decisions the analysis must support.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2: Prepare (Signature Orange Highlight Card from Inspiration Image) -->
+          <div class="process-card highlight-card">
+            <div class="process-step-num">02.</div>
+            <div>
+              <h3 class="process-card-title">Prepare</h3>
+              <p class="process-card-desc">
+                Extract, query, clean, and validate raw data using SQL and Power Query, ensuring data accuracy and robust pipelines before modeling.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3: Analyze -->
+          <div class="process-card">
+            <div class="process-step-num">03.</div>
+            <div>
+              <h3 class="process-card-title">Analyze</h3>
+              <p class="process-card-desc">
+                Model relational schemas, engineer DAX measures, and explore patterns, trends, and correlations with SQL and Python.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4: Communicate -->
+          <div class="process-card">
+            <div class="process-step-num">04.</div>
+            <div>
+              <h3 class="process-card-title">Communicate</h3>
+              <p class="process-card-desc">
+                Build clean, intuitive dashboards with responsive visual hierarchies and explain findings in clear, actionable business terms.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS SECTION (Categorized & Interactive)
+         ========================================================================== -->
+    <section id="skills" class="skills-section" aria-label="Technical Skills">
+      <div class="container">
+        <span class="section-label">Toolkit & Competencies</span>
+        <h2 class="section-heading">Technical Skills</h2>
+
+        <!-- Interactive Category Filters -->
+        <div class="skills-filter-bar" role="tablist" aria-label="Skill categories filter">
+          <button class="skills-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="skills-tab-btn" data-filter="sql-db" role="tab" aria-selected="false">SQL & Databases</button>
+          <button class="skills-tab-btn" data-filter="bi-viz" role="tab" aria-selected="false">BI & Visualization</button>
+          <button class="skills-tab-btn" data-filter="python-stats" role="tab" aria-selected="false">Python & Statistics</button>
+          <button class="skills-tab-btn" data-filter="devops" role="tab" aria-selected="false">Dev & Agile</button>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- SQL -->
+          <div class="skill-category-card" data-category="sql-db" data-is-core="true">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">SQL</div>
+              <h3 class="skill-card-title">SQL Expertise</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Joins</span>
+              <span class="skill-chip">CTEs</span>
+              <span class="skill-chip">Window Functions</span>
+              <span class="skill-chip">Stored Procedures</span>
+              <span class="skill-chip">Query Optimization</span>
+            </div>
+          </div>
+
+          <!-- BI Tools -->
+          <div class="skill-category-card" data-category="bi-viz" data-is-core="true">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">BI</div>
+              <h3 class="skill-card-title">BI Tools</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Power BI</span>
+              <span class="skill-chip">DAX Measures</span>
+              <span class="skill-chip">Power Query (M)</span>
+              <span class="skill-chip">Data Modeling</span>
+              <span class="skill-chip">Tableau</span>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-category-card" data-category="python-stats" data-is-core="true">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">PY</div>
+              <h3 class="skill-card-title">Python Analytics</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">NumPy</span>
+              <span class="skill-chip">Matplotlib</span>
+              <span class="skill-chip">Data Wrangling</span>
+              <span class="skill-chip">Exploratory Analysis</span>
+            </div>
+          </div>
+
+          <!-- Advanced Excel -->
+          <div class="skill-category-card" data-category="bi-viz" data-is-core="true">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">XL</div>
+              <h3 class="skill-card-title">Advanced Excel</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Advanced Excel</span>
+              <span class="skill-chip">Pivot Tables</span>
+              <span class="skill-chip">Power Query</span>
+              <span class="skill-chip">XLOOKUP</span>
+              <span class="skill-chip">Formulas & Slicers</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card" data-category="sql-db">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">DB</div>
+              <h3 class="skill-card-title">Databases</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">SQL Server</span>
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">MongoDB</span>
+              <span class="skill-chip">Relational Schemas</span>
+            </div>
+          </div>
+
+          <!-- Visualization -->
+          <div class="skill-category-card" data-category="bi-viz">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">VZ</div>
+              <h3 class="skill-card-title">Visualization</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Power BI Dashboards</span>
+              <span class="skill-chip">Tableau Workbooks</span>
+              <span class="skill-chip">Excel Interactive Charts</span>
+              <span class="skill-chip">Matplotlib Plots</span>
+            </div>
+          </div>
+
+          <!-- Statistics & Data Prep -->
+          <div class="skill-category-card" data-category="python-stats">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">ST</div>
+              <h3 class="skill-card-title">Stats & Preparation</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Statistical Analysis</span>
+              <span class="skill-chip">Data Cleaning</span>
+              <span class="skill-chip">Data Validation</span>
+              <span class="skill-chip">ETL Concepts</span>
+            </div>
+          </div>
+
+          <!-- Developer Tools -->
+          <div class="skill-category-card" data-category="devops">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">DEV</div>
+              <h3 class="skill-card-title">Developer Tools</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Visual Studio Code</span>
+              <span class="skill-chip">Visual Studio</span>
+              <span class="skill-chip">Postman</span>
+              <span class="skill-chip">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Version Control & DevOps -->
+          <div class="skill-category-card" data-category="devops">
+            <div class="skill-card-head">
+              <div class="skill-icon-box">GIT</div>
+              <h3 class="skill-card-title">Delivery & DevOps</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">Azure DevOps</span>
+              <span class="skill-chip">Agile / Scrum</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROFESSIONAL EXPERIENCE SECTION (Editorial Floating Card from Reference)
+         ========================================================================== -->
+    <section id="experience" class="experience-section" aria-label="Professional Experience">
+      <div class="container">
+        <div class="exp-wrapper">
+          <div class="exp-header">
+            <div class="exp-pill-badge">My Experience</div>
+            <h2 class="exp-title">Turning Ideas & Code into <span>Business Solutions</span></h2>
+            <p style="color:var(--color-text-muted); max-width: 600px; margin: 0 auto;">
+              7 years of professional software engineering experience across Accenture and Infosys, grounding my analytical work in production data reliability, API integration, and stakeholder delivery.
+            </p>
+          </div>
+
+          <!-- The Signature Elevated Light Card from Inspiration Screenshot -->
+          <div class="exp-timeline-card">
+            <div class="exp-timeline-list">
+              
+              <!-- Role 1: Accenture Senior Frontend Developer (Recent) -->
+              <div class="exp-timeline-item">
+                <div class="exp-item-left">
+                  <span class="exp-item-role">Senior Frontend Developer</span>
+                  <span class="exp-item-company">Accenture</span>
+                  <span class="exp-item-period">06/2024 – Present • Bengaluru</span>
+                  <span class="exp-item-tag">Internal Project</span>
+                </div>
+                <div class="exp-item-right">
+                  <div class="exp-dot-indicator" aria-hidden="true"></div>
+                  <div class="exp-item-details">
+                    <ul>
+                      <li>Collaborated closely with backend developers to integrate Azure Function Apps as backend data services, ensuring accurate, seamless data flow between systems.</li>
+                      <li>Performed cross-browser testing and debugging to validate data display and application behavior, reducing inconsistencies across environments.</li>
+                      <li>Built and optimized reusable UI components and modules, improving maintainability and supporting scalable, data-driven features.</li>
+                      <li>Participated in Agile ceremonies (sprint planning, stand-ups, code reviews) to align technical delivery with business and stakeholder requirements.</li>
+                      <li>Used Git for version control, maintaining clean, well-documented repositories to support collaborative development.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Role 2: Accenture Senior Frontend Developer -->
+              <div class="exp-timeline-item">
+                <div class="exp-item-left">
+                  <span class="exp-item-role">Senior Frontend Developer</span>
+                  <span class="exp-item-company">Accenture</span>
+                  <span class="exp-item-period">03/2023 – 05/2024 • Bengaluru</span>
+                  <span class="exp-item-tag">Innovation Hub Project</span>
+                </div>
+                <div class="exp-item-right">
+                  <div class="exp-dot-indicator" aria-hidden="true"></div>
+                  <div class="exp-item-details">
+                    <ul>
+                      <li>Partnered with backend teams to integrate RESTful APIs into the application, enabling real-time data updates and improving data accuracy for end users.</li>
+                      <li>Worked with Node.js-based backend services to streamline data processing, improving application performance and scalability.</li>
+                      <li>Converted business requirements from product managers and stakeholders into technical solutions, aligning delivery with business goals.</li>
+                      <li>Followed Agile methodology, contributing to sprint planning and code reviews to ensure timely, quality delivery.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Role 3: Infosys Software Engineer -->
+              <div class="exp-timeline-item">
+                <div class="exp-item-left">
+                  <span class="exp-item-role">Software Engineer</span>
+                  <span class="exp-item-company">Infosys</span>
+                  <span class="exp-item-period">07/2021 – 02/2023 • Bhubaneswar</span>
+                  <span class="exp-item-tag">Network & Provider Project</span>
+                </div>
+                <div class="exp-item-right">
+                  <div class="exp-dot-indicator" aria-hidden="true"></div>
+                  <div class="exp-item-details">
+                    <ul>
+                      <li>Analyzed project requirements and aligned objectives with stakeholder needs, achieving a 100% success rate in meeting project goals (resume-reported).</li>
+                      <li>Conducted unit testing and output validation to improve software reliability and reduce defects.</li>
+                      <li>Reviewed code for quality and accuracy, providing constructive feedback to maintain adherence to engineering standards.</li>
+                      <li>Resolved application and data-related issues across production and non-production environments, supporting continuous operations.</li>
+                      <li>Communicated directly with clients to gather requirements and resolve issues, ensuring solutions met business expectations.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Role 4: Infosys Software Engineer -->
+              <div class="exp-timeline-item">
+                <div class="exp-item-left">
+                  <span class="exp-item-role">Software Engineer</span>
+                  <span class="exp-item-company">Infosys</span>
+                  <span class="exp-item-period">05/2019 – 06/2021 • Bhubaneswar</span>
+                  <span class="exp-item-tag">Corporate Project</span>
+                </div>
+                <div class="exp-item-right">
+                  <div class="exp-dot-indicator" aria-hidden="true"></div>
+                  <div class="exp-item-details">
+                    <ul>
+                      <li>Analyzed and interpreted business requirements to guide development priorities and sprint backlog.</li>
+                      <li>Resolved coding and data-related issues efficiently, maintaining strict project delivery timelines.</li>
+                      <li>Collaborated with senior developers and cross-functional teams in an Agile environment to ensure timely feature delivery.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom CTA Button inside Experience Card -->
+            <div class="exp-cta-bottom">
+              <a href="#contact" class="btn-timeline-cta">
+                Let's Work Together <span>→</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATIONS & CREDENTIALS (Matches "AWARDS WINNING" Style)
+         ========================================================================== -->
+    <section id="certifications" class="awards-section" aria-label="Certifications">
+      <div class="container">
+        <div class="awards-header">
+          <div>
+            <span class="section-label">Verified Credentials</span>
+            <h2 class="section-heading">Certifications</h2>
+          </div>
+          <a href="Pritish_Kumar_Patra_Resume.pdf" download="Pritish_Kumar_Patra_Resume.pdf" class="btn-primary-dark" style="background:var(--color-orange); color:var(--color-bg-black);">
+            Download Resume (PDF) <span>↓</span>
+          </a>
+        </div>
+
+        <div class="awards-table-wrap">
+          <table class="awards-table" aria-label="Certifications List">
+            <thead>
+              <tr>
+                <th scope="col">Issuing Organization</th>
+                <th scope="col">Credential Title</th>
+                <th scope="col">Domain</th>
+                <th scope="col">Date / Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="award-org">Coding Ninjas</span></td>
+                <td><span class="award-title-cell">Data Analytics Certification (Excel, Power BI, Tableau, SQL, Python)</span></td>
+                <td>Data Analytics & BI</td>
+                <td><span class="award-badge-status">July 2026</span></td>
+              </tr>
+              <tr>
+                <td><span class="award-org">Microsoft</span></td>
+                <td><span class="award-title-cell">Power BI Data Analyst Associate</span></td>
+                <td>Business Intelligence</td>
+                <td><span class="award-badge-status">PL-300</span></td>
+              </tr>
+              <tr>
+                <td><span class="award-org">Microsoft</span></td>
+                <td><span class="award-title-cell">Microsoft Azure Fundamentals</span></td>
+                <td>Cloud Infrastructure</td>
+                <td><span class="award-badge-status">AZ-900</span></td>
+              </tr>
+              <tr>
+                <td><span class="award-org">Microsoft</span></td>
+                <td><span class="award-title-cell">Microsoft Azure Administrator Associate</span></td>
+                <td>Cloud Administration</td>
+                <td><span class="award-badge-status">AZ-104</span></td>
+              </tr>
+              <tr>
+                <td><span class="award-org">Microsoft</span></td>
+                <td><span class="award-title-cell">Microsoft Azure DevOps Engineer Expert</span></td>
+                <td>DevOps & CI/CD</td>
+                <td><span class="award-badge-status">AZ-400</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & LANGUAGES SECTION
+         ========================================================================== -->
+    <section id="education" class="edu-lang-section" aria-label="Education and Languages">
+      <div class="container">
+        <div class="edu-lang-grid">
+          
+          <!-- Education Card -->
+          <div class="edu-card">
+            <span class="section-label">Academic Background</span>
+            <h3 class="edu-degree">B.Tech, Mechanical Engineering</h3>
+            <p class="edu-inst">Kalinga Institute of Technology, Odisha, India</p>
+            <p class="edu-period">2014 – 2018</p>
+            <p style="color:var(--color-text-muted); font-size: 0.875rem; margin-top: 14px; line-height: 1.6;">
+              Strong foundational training in analytical thinking, mathematical problem solving, systems logic, and quantitative modeling.
+            </p>
+          </div>
+
+          <!-- Languages Card -->
+          <div class="lang-card">
+            <span class="section-label">Communication</span>
+            <h3 class="display-title" style="font-size: 1.6rem; margin-bottom: 8px;">Languages</h3>
+            <div class="languages-grid">
+              <div class="lang-pill">
+                <span class="lang-name">English</span>
+                <span class="lang-indicator">Fluent</span>
+              </div>
+              <div class="lang-pill">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-indicator">Fluent</span>
+              </div>
+              <div class="lang-pill">
+                <span class="lang-name">Odia</span>
+                <span class="lang-indicator">Native</span>
+              </div>
+              <div class="lang-pill">
+                <span class="lang-name">French</span>
+                <span class="lang-indicator">Conversational</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (Working Mailto, Reveal Phone, Direct Form)
+         ========================================================================== -->
+    <section id="contact" class="contact-section" aria-label="Contact Section">
+      <div class="container">
+        <div class="contact-card-main">
+          
+          <!-- Contact Left Column -->
+          <div class="contact-info-col">
+            <span class="section-label">Get in Touch</span>
+            <h2 class="contact-headline">Let’s discuss your <span>data needs</span></h2>
+            <p class="contact-subtext">
+              Get in touch to discuss data analyst opportunities, dashboard consulting, and analytics projects. Available for full-time roles and analytics collaborations.
+            </p>
+
+            <div class="contact-direct-items">
+              
+              <!-- Direct Email Box -->
+              <div class="direct-link-box">
+                <div>
+                  <span class="direct-box-label">Primary Email</span>
+                  <a href="mailto:pritishpatra21@gmail.com" class="direct-box-val" style="color:var(--color-warm-white); text-decoration:none;">
+                    pritishpatra21@gmail.com
+                  </a>
+                </div>
+                <button type="button" class="copy-btn copy-email-btn" aria-label="Copy email address">
+                  Copy Email
+                </button>
+              </div>
+
+              <!-- Location Box -->
+              <div class="direct-link-box">
+                <div>
+                  <span class="direct-box-label">Current Location</span>
+                  <span class="direct-box-val">Bhubaneswar, Odisha, India</span>
+                </div>
+                <span style="font-size:0.75rem; color:var(--color-orange); font-weight:700;">Open to Relocation / Remote</span>
+              </div>
+
+              <!-- Reveal Phone Button (PRD Privacy Rule: default off, retained in inventory) -->
+              <button type="button" id="reveal-phone-btn" class="reveal-phone-btn">
+                🔒 Click to reveal direct telephone number
+              </button>
+
+            </div>
+          </div>
+
+          <!-- Contact Right Column: Quick Message Form -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="contact-form" aria-label="Contact inquiry form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Data Analyst Opportunity / Inquiry" value="Data Analyst Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Tell me about your analytics project or open role..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-send-message" id="submit-contact-btn">
+                Send Message via Email <span>→</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER (PRD Compliant)
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-text">
+        <strong>Pritish Kumar Patra</strong> • Data Analyst • Bhubaneswar, India
+      </div>
+      <a href="#main-content" class="footer-back-top" aria-label="Scroll back to top">
+        Back to top ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE LIGHTBOX MODAL FOR DASHBOARDS
+       ========================================================================== -->
+  <div id="dashboard-modal" class="image-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-content-wrap">
+      <div class="modal-header">
+        <h4 id="modal-title" class="modal-title">Dashboard Preview</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close image preview">✕</button>
+      </div>
+      <img id="modal-img" src="" alt="Dashboard Preview" class="modal-img">
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-msg" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
